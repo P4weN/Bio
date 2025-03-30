@@ -3,7 +3,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
     font-family: FreeMono;
     animation: wejście 2s ease 0s 1 normal forwards;
 }
@@ -37,14 +36,14 @@ h4 {
 }
 
 button {
-    font-size: 20px;
+    font-size: clamp(14px, 1.8vw, 20px);
     font-family: FreeMono;
     color: white;
     background-color: black;
     border: 3px solid black;
     cursor: pointer;
-    height: 60px;
-    width: 700px;
+    height: clamp(50px, 10vh, 60px);
+    width: min(80%, 700px);
 }
 
 /*.z {
