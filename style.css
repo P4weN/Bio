@@ -37,7 +37,7 @@ h4 {
 
 button {
     font-size: clamp(14px, 1.8vw, 20px);
-    font-family: FreeMono;
+    font-family: 'FreeMono';
     color: white;
     background-color: black;
     border: 3px solid black;
@@ -46,27 +46,26 @@ button {
     width: min(80%, 700px);
 }
 
-/*.z {
-    position: absolute;
-    top: 3px;
-    right: 4px;
-    display: flex;
-    gap: 20px;
+button.a {
+    font-size: clamp(10px, 1.8vw, 16px);
+    background-color: #e9e9e9;
+    border: black solid 3px;
+    color: black;
+    cursor: pointer;
+    height: clamp(30px, 10vh, 50px);
+    width: min(80%, 130px);
+    border-radius: 30px 30px 30px 30px;
+
 }
 
-.z button {
-    height: 40px;
-    width: 300px;
+button.a:hover {
+    box-shadow: 0px 0px 25px black;
+    animation: animation1 2s ease 0s infinite normal forwards;
 }
 
-.z p {
-    color: white;
-    font-size: 20px;
-    margin: 2px;
-}*/
 
 button:hover {
-    box-shadow: 0px 0px 20px #959595;
+    box-shadow: 0px 0px 25px #b1b1b1;
     animation: asd 1.8s ease 0s infinite normal forwards;
 }
 
@@ -94,5 +93,38 @@ button:hover {
 
 	100% {
 		transform: scale(1);
+	}
+}
+
+
+@keyframes animation1 {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
 	}
 }
