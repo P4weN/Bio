@@ -1,0 +1,99 @@
+body {
+    background-image: url(Beznazwy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: FreeMono;
+    animation: wejście 2s ease 0s 1 normal forwards;
+}
+
+
+.images {
+    height: 130px;
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 35px;
+    border: 3px solid black;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+button {
+    font-size: 20px;
+    font-family: FreeMono;
+    color: white;
+    background-color: black;
+    border: 3px solid black;
+    cursor: pointer;
+    height: 60px;
+    width: 700px;
+}
+
+/*.z {
+    position: absolute;
+    top: 3px;
+    right: 4px;
+    display: flex;
+    gap: 20px;
+}
+
+.z button {
+    height: 40px;
+    width: 300px;
+}
+
+.z p {
+    color: white;
+    font-size: 20px;
+    margin: 2px;
+}*/
+
+button:hover {
+    box-shadow: 0px 0px 20px #959595;
+    animation: asd 1.8s ease 0s infinite normal forwards;
+}
+
+@keyframes wejście {
+	0% {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+
+@keyframes asd {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.05);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
