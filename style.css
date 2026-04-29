@@ -27,7 +27,7 @@ body {
     background: rgb(28, 28, 28, 0.4);
     backdrop-filter: blur(6px);
 
-    animation: a 2s ease 0s 1 normal forwards;
+    animation: a 1.5s ease 0s 1 normal forwards;
 }
 
 #gitara {
