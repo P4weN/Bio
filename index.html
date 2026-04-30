@@ -45,6 +45,9 @@
     </audio>
     <button id="muzyka-btn" onclick="toggleAudio()">🔇</button>
 <script>
+const audio = document.getElementById('audio');
+audio.volume = 0.3;
+
 function toggleAudio() {
     const audio = document.getElementById('audio');
     const btn = document.getElementById('muzyka-btn');
