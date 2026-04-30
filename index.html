@@ -11,6 +11,9 @@
     <title>PaweN</title>
 </head>
 <body>
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="miasto.mp4" type="video/mp4">
+    </video>
     <div class="bio">
         <img src="d.jpg" alt="guitar" id="gitara">
         <h1>PaweN</h1>
@@ -37,6 +40,23 @@
             </div>
         </div>
     </div>
+    <audio id="audio" loop>
+        <source src="muzyka.mp3" type="audio/mpeg">
+    </audio>
+    <button id="muzyka-btn" onclick="toggleAudio()">🔇</button>
+<script>
+function toggleAudio() {
+    const audio = document.getElementById('audio');
+    const btn = document.getElementById('muzyka-btn');
+    if (audio.paused) {
+        audio.play();
+        btn.textContent = '🔊';
+    } else {
+        audio.pause();
+        btn.textContent = '🔇';
+    }
+}
+</script>
 </body>
 </html>
 
